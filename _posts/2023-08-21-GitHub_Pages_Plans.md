@@ -9,11 +9,13 @@ courses: { compsci: {week: 1} }
 ---
 
 ### PBL Unit 1 / Week 1
-Learning outcome. Building a personal and running GitHub Pages.
-- Monday: Schedule Live Review - 4 minutes. Finish Tools setup. Attend Office Hours on HTML, CSS, JS and Student Blog.
-- Tuesday: Read [Markdown Student Page](https://nighthawkcoders.github.io/teacher//c4.3/c5.0/2023/08/17/markdown-html_fragments.html), Attend Office Hours on Updating Home Page and Plan Page.
-- Wednesday: Work Plan Page and Home Page.  Prep with pair on live review.
-- Thursday: 10:45 live review per Canvas.  Read [Linux Shell and Bash](https://nighthawkcoders.github.io/teacher//5.a/c4.1/2023/08/16/linux_shell_IPYNB_2_.html).  Tranfer blog and customize for my lab notebook.
+### PBL Unit 1 / 1
+Week 1: installing and updating tools and getting our page started
+- Monday: Finish installing tools and getting everything ready for the live review
+- Tuesday: Schedule live review and start getting more comfertable with vs-code and getting our page running and read Read [Markdown Student Page](https://nighthawkcoders.github.io/teacher//c4.3/c5.0/2023/08/17/markdown-html_fragments.html)
+- Wednesday: change theme and practice for the live review
+- Thursday: Read [Linux shell and bash] transfer blog and customize for my lab notebook
+
 
 
 ### Pair Planning Meeting
