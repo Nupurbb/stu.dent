@@ -83,22 +83,6 @@ Hi, My name is Nupur and I am a 10th grader at DNHS.
 <html>
 
 
-
-
-
-
-## Number Guessing Game
-<details>
-<summary>Click to play the game</summary>
-
-<div id="game-container">
-  <p>Welcome to the Number Guessing Game!</p>
-  <p>Try to guess the secret number between 1 and 100.</p>
-  <input type="number" id="guessInput" placeholder="Enter your guess">
-  <button onclick="checkGuess()">Submit Guess</button>
-  <p id="result"></p>
-</div>
-
 ## Challenges We Faced:
 - Making the make command work: the command was periodically working and not that reliable to use so instead we started using bundle exec jekyll serve but after reinstalling the new make command it started working again
 - Also another challenge we faced was making sure that all the commands were installed because a lot of times the commands kept showing errors despite being continously installed 

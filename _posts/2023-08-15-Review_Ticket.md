@@ -3,13 +3,13 @@ toc: true
 comments: true
 layout: post
 title: Review Ticket
-description:  Review Ticket!!! 
+description: This is my week two review ticket in which I discuss what I accomplished and hope to accomplish from this week and hopefully next week as well. 
 type: tangibles
-courses: { compsci: {week: 1} }
+courses: { compsci: {week: 2} }
 ---
 
 ### Summary of Accomplishments
->  Update Blog to contain all hacks.  
+> Update Blog to contain all hacks.  
 - Added in week 1 hacks
     - Added in snake game, pizza game, quiz on me, weather app, python calculator and graphing calculator.
 - Recreated our repositories and alligned it with the new version that was pushed out

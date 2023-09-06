@@ -10,7 +10,7 @@
     height: auto;
     border-radius: 10px;
     background-color: #21807c;
-    border: 3px solid black;
+    border: 3px solid rgb(0, 0, 0);
     font-size: 1.5em;
 
     display: flex;
@@ -85,6 +85,6 @@
   /* styling for the calculator equals button */
   .calculator-equals {
     @extend .button;
-    background-color: #e70f0f;
+    background-color: #490fe7;
   }
 
