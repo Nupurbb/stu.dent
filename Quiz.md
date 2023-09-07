@@ -1,25 +1,56 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Interactive Quiz</title>
-</head>
-<body>
-    <div class="quiz-container">
-        <h1>Interactive Quiz</h1>
-        <div class="question">
-            <p id="What is the name of my partner?">Question text will appear here.</p>
-        </div>
-        <div class="options">
-            <button class="Sreeja" onclick="checkAnswer(0)">Option 1</button>
-            <button class="Ananya" onclick="checkAnswer(1)">Option 2</button>
-            <button class="Anika" onclick="checkAnswer(2)">Option 3</button>
-            <button class="Ella" onclick="checkAnswer(3)">Option 4</button>
-        </div>
-        <p id="Sreeja"></p>
-    </div>
-    <script src="script.js"></script>
-</body>
-</html>
+# Interactive Quiz
+
+<details>
+  <summary>Question 1</summary>
+  <p>What is the capital of France?</p>
+  <ul>
+    <li><a href="javascript:void(0);" onclick="showAnswer(1)">Paris</a></li>
+    <li><a href="javascript:void(0);" onclick="showAnswer(0)">London</a></li>
+    <li><a href="javascript:void(0);" onclick="showAnswer(0)">Berlin</a></li>
+    <li><a href="javascript:void(0);" onclick="showAnswer(0)">Madrid</a></li>
+  </ul>
+  <p id="answer1" style="display: none;"><strong>Correct Answer:</strong> Paris</p>
+</details>
+
+<details>
+  <summary>Question 2</summary>
+  <p>Which planet is known as the Red Planet?</p>
+  <ul>
+    <li><a href="javascript:void(0);" onclick="showAnswer(0)">Earth</a></li>
+    <li><a href="javascript:void(0);" onclick="showAnswer(1)">Mars</a></li>
+    <li><a href="javascript:void(0);" onclick="showAnswer(0)">Venus</a></li>
+    <li><a href="javascript:void(0);" onclick="showAnswer(0)">Jupiter</a></li>
+  </ul>
+  <p id="answer2" style="display: none;"><strong>Correct Answer:</strong> Mars</p>
+</details>
+
+<details>
+  <summary>Question 3</summary>
+  <p>What is the largest mammal in the world?</p>
+  <ul>
+    <li><a href="javascript:void(0);" onclick="showAnswer(0)">Giraffe</a></li>
+    <li><a href="javascript:void(0);" onclick="showAnswer(0)">African Elephant</a></li>
+    <li><a href="javascript:void(0);" onclick="showAnswer(1)">Blue Whale</a></li>
+    <li><a href="javascript:void(0);" onclick="showAnswer(0)">Lion</a></li>
+  </ul>
+  <p id="answer3" style="display: none;"><strong>Correct Answer:</strong> Blue Whale</p>
+</details>
+
+<details>
+  <summary>Question 4</summary>
+  <p>What is the largest planet in our solar system?</p>
+  <ul>
+    <li><a href="javascript:void(0);" onclick="showAnswer(0)">Mars</a></li>
+    <li><a href="javascript:void(0);" onclick="showAnswer(0)">Earth</a></li>
+    <li><a href="javascript:void(0);" onclick="showAnswer(0)">Venus</a></li>
+    <li><a href="javascript:void(0);" onclick="showAnswer(1)">Jupiter</a></li>
+  </ul>
+  <p id="answer4" style="display: none;"><strong>Correct Answer:</strong> Jupiter</p>
+</details>
+
+<script>
+  function showAnswer(questionNumber) {
+    const answerElement = document.getElementById(`answer${questionNumber + 1}`);
+    answerElement.style.display = "block";
+  }
+</script>

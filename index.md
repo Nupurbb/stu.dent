@@ -83,6 +83,8 @@ Hi, My name is Nupur and I am a 10th grader at DNHS.
 <html>
 
 
+
+
 ## Challenges We Faced:
 - Making the make command work: the command was periodically working and not that reliable to use so instead we started using bundle exec jekyll serve but after reinstalling the new make command it started working again
 - Also another challenge we faced was making sure that all the commands were installed because a lot of times the commands kept showing errors despite being continously installed 
