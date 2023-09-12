@@ -85,10 +85,16 @@ Hi, My name is Nupur and I am a 10th grader at DNHS.
 
 
 
-## Challenges We Faced:
-- Making the make command work: the command was periodically working and not that reliable to use so instead we started using bundle exec jekyll serve but after reinstalling the new make command it started working again
-- Also another challenge we faced was making sure that all the commands were installed because a lot of times the commands kept showing errors despite being continously installed 
-- to fix this we rebooted the computer and cleaned up our vs code and it ended up working after that
-- Another issue was that my partner was on windows and I was using a mac which made it difficult for us to help each other but we became more familiar with each other's laptops.
-- BUT with an AGILE MINDSET and the idea that nothing is too difficult to achieve we persevered through all the issues we faced. 
 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Cursive Font on Purple Background</title>
+    <style>
+        body {
+            color: purple; /* Set text color to white */
+            font-family: cursive; /* Use cursive font-family */
+            font-size: 18px; /* Set the font size (adjust as needed) */
+        }
+    </style>

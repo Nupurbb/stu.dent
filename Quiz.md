@@ -54,3 +54,15 @@
     answerElement.style.display = "block";
   }
 </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Cursive Font on Purple Background</title>
+    <style>
+        body {
+            background-color: light blue; /* Set background color to purple */
+            color: purple; /* Set text color to white */
+            font-family: cursive; /* Use cursive font-family */
+            font-size: 18px; /* Set the font size (adjust as needed) */
+        }
+    </style>

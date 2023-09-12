@@ -4,7 +4,7 @@ comments: true
 layout: post
 title: Chatbot!
 description: Talk with me
-type: tangibles
+type: hacks
 courses: { compsci: {week: 3} }
 ---
 <html lang="en">
@@ -183,3 +183,17 @@ courses: { compsci: {week: 3} }
     </script>
 </body>
 </html>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Cursive Font on Purple Background</title>
+    <style>
+        body {
+            background-color: light green; /* Set background color to purple */
+            color: purple; /* Set text color to white */
+            font-family: cursive; /* Use cursive font-family */
+            font-size: 18px; /* Set the font size (adjust as needed) */
+        }
+    </style>

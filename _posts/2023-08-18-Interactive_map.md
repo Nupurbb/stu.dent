@@ -4,53 +4,76 @@ comments: false
 layout: post
 title: game
 description: 
-type: tangibles
+type: hacks
 courses: { compsci: {week: 3} }
 ---
-# Choose Your Adventure Game
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number Game</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            color: #0074e4;
+        }
+        #message {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Guess the Number Game</h1>
+    <p>Guess a number between 1 and 100:</p>
+    <input type="number" id="guess" min="1" max="100">
+    <button id="submit">Submit Guess</button>
+    <p id="message"></p>
 
-You find yourself standing at a crossroads in a mystical forest. You have two paths to choose from:
+    <script>
+        // JavaScript code for the interactive game
+        const randomNumber = Math.floor(Math.random() * 100) + 1; // Generate a random number between 1 and 100
+        let attempts = 0;
 
-1. [Go left into the dark forest](#left-path)
-2. [Go right towards the enchanted castle](#right-path)
+        document.addEventListener("DOMContentLoaded", function () {
+            const guessInput = document.getElementById("guess");
+            const submitButton = document.getElementById("submit");
+            const message = document.getElementById("message");
 
-## Left Path
+            submitButton.addEventListener("click", function () {
+                const userGuess = parseInt(guessInput.value);
+                if (isNaN(userGuess) || userGuess < 1 || userGuess > 100) {
+                    message.textContent = "Please enter a valid number between 1 and 100.";
+                    return;
+                }
 
-As you venture deeper into the dark forest, you encounter a talking owl. It offers you a riddle:
+                attempts++;
 
-*What has keys but can't open locks?*
+                if (userGuess === randomNumber) {
+                    message.textContent = `Congratulations! You guessed the number ${randomNumber} in ${attempts} attempts.`;
+                    guessInput.disabled = true;
+                    submitButton.disabled = true;
+                } else if (userGuess < randomNumber) {
+                    message.textContent = "Try a higher number.";
+                } else {
+                    message.textContent = "Try a lower number.";
+                }
+            });
+        });
+    </script>
 
-1. [A piano](#piano)
-2. [A treasure chest](#treasure-chest)
-
-### Piano
-
-The owl congratulates you for solving the riddle and shows you the way out of the forest.
-
-## Treasure Chest
-
-You open the treasure chest but trigger a trap! Game over.
-
-## Right Path
-
-You approach the enchanted castle, and a guardian challenges you:
-
-*To enter, you must guess my favorite number between 1 and 10.*
-
-Guess a number between 1 and 10:
-
-1. [1](#wrong-guess)
-2. [5](#correct-guess)
-3. [9](#wrong-guess)
-
-### Correct Guess
-
-The guardian is impressed by your guess, and you are allowed to enter the castle. You've won!
-
-### Wrong Guess
-
-The guardian does not let you enter the castle, and you must turn back.
-
----
-
-Thank you for playing the Choose Your Adventure Game!
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>White Cursive Font on Purple Background</title>
+    <style>
+        body {
+            background-color: light orange; /* Set background color to purple */
+            color: black; /* Set text color to white */
+            font-family: cursive; /* Use cursive font-family */
+            font-size: 18px; /* Set the font size (adjust as needed) */
+        }
+    </style>
